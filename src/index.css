@@ -1,10 +1,10 @@
 /* @import url() FONT IMPORTS MUST ALWAYS BE AT THE VERY TOP OF THIS FILE, ABOVE THE TAILWIND IMPORTS — DO NOT DELETE THIS COMMENT */
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Montserrat:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Montserrat:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap");
 
 /* CRITICAL: THE FOLLOWING TAILWIND IMPORTS MUST NEVER BE DELETED OR REORDERED — DO NOT DELETE THIS COMMENT */
-@import 'tailwindcss/base';
-@import 'tailwindcss/components';
-@import 'tailwindcss/utilities';
+@import "tailwindcss/base";
+@import "tailwindcss/components";
+@import "tailwindcss/utilities";
 
 /* END TAILWIND IMPORTS — ALL OTHER CSS MUST GO BELOW THIS LINE */
 
@@ -50,11 +50,8 @@ body {
 }
 /* 56px engineered grid overlay */
 .grid-overlay {
-  background-image: linear-gradient(
-      to right,
-      rgba(217, 217, 217, 0.055) 1px,
-      transparent 1px
-    ),
+  background-image:
+    linear-gradient(to right, rgba(217, 217, 217, 0.055) 1px, transparent 1px),
     linear-gradient(to bottom, rgba(217, 217, 217, 0.055) 1px, transparent 1px);
   background-size: 56px 56px;
 }
@@ -77,9 +74,26 @@ body {
     rgba(255, 113, 1, 0) 100%
   );
 }
+@keyframes live-glow-pulse {
+  0%,
+  100% {
+    opacity: 0.45;
+    transform: scale(0.85);
+    filter: blur(2px);
+  }
+  50% {
+    opacity: 1;
+    transform: scale(1.7);
+    filter: blur(4px);
+  }
+}
+.live-glow {
+  animation: live-glow-pulse 1.6s ease-in-out infinite;
+}
 @media (prefers-reduced-motion: reduce) {
   .horizon-drift,
-  .scanline {
+  .scanline,
+  .live-glow {
     animation: none;
   }
 }

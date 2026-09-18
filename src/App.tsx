@@ -29,8 +29,8 @@ export function App() {
 
           <p className="mt-3 min-h-4 text-right font-mono text-[10px] uppercase tracking-micro text-silver/45">
             {summary
-              ? "LakiPay account synced"
-              : "Showing saved account totals"}
+              ? "  "
+              : "  "}
           </p>
 
           <div className="mt-4 md:mt-6">
