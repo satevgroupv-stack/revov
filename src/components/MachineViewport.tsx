@@ -38,7 +38,16 @@ export function MachineViewport() {
               RevoV Smart Vending Machine
             </h1>
             <p className="mt-5 max-w-[46ch] text-sm leading-relaxed text-silver/70 md:text-base">
-              {machineDescription}
+              {machineDescription.map((paragraph, pIndex) => (
+                <span key={pIndex}>
+                  {paragraph.map((segment, sIndex) => (
+                    <span key={sIndex} className={segment.bold ? 'font-semibold text-white' : ''}>
+                      {segment.text}
+                    </span>
+                  ))}
+                  {pIndex < machineDescription.length - 1 && <><br /><br /></>}
+                </span>
+              ))}
             </p>
           </div>
         </div>
