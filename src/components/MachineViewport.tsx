@@ -35,7 +35,7 @@ export function MachineViewport() {
           <div>
             <MicroLabel tone="orange">Engineered in Ethiopia</MicroLabel>
             <h1 className="mt-3 text-[1.6rem] font-semibold leading-tight tracking-tight text-white md:text-[2.1rem]">
-              RevoV Smart Vending Machine
+              RevoV Vending Machine
             </h1>
             <p className="mt-5 max-w-[46ch] text-sm leading-relaxed text-silver/70 md:text-base">
               {machineDescription.map((paragraph, pIndex) => (

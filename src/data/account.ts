@@ -7,9 +7,8 @@ export type DescSegment = { text: string; bold?: boolean };
 export type DescParagraph = DescSegment[];
 
 export const machineDescription: DescParagraph[] = [
-  [{ text: 'RevoV' }],
-  [{ text: 'Smart Retail, Reimagined.' }],
-  [
+  [{ text: '' }],
+  [{ text: 'Smart Retail, Reimagined.' },
     { text: 'RevoV transforms automated retail ' },
     { text: 'into a connected, intelligent, and adaptable platform', bold: true },
     { text: ' giving people instant access to everyday essentials while giving operators the tools to manage, monitor, and scale their services remotely.' },
