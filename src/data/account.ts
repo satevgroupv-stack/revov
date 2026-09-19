@@ -15,7 +15,9 @@ export const machineDescription: DescParagraph[] = [
     { text: ' giving people instant access to everyday essentials while giving operators the tools to manage, monitor, and scale their services remotely.' },
   ],
   [
-    { text: 'With 24/7 cashless operation, IoT connectivity, real-time inventory intelligence, energy-efficient systems, integrated power backup, and modular packaging recovery, RevoV brings retail and recovery together in one platform.' },
+    { text: 'With'},
+    { text: '24/7 cashless operation, IoT connectivity, real-time inventory intelligence, energy-efficient systems, integrated power backup, and modular packaging recovery,' ,bold: true},
+    { text: 'RevoV brings retail and recovery together in one platform.'},
   ],
   [
     { text: 'Designed to serve. Connected to perform. Built to scale.', bold: true },
